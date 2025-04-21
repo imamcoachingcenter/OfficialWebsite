@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMAM INSTITUTE OF SCIENCE AND COMMERCE</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- 📢 Announcement Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <img src="announcement-1.jpeg" id="popup-image" alt="Announcement">
+    <button id="popup-ok">OK</button>
+  </div>
+</div>
+
+<!-- 🎓 Header -->
+<header class="glass-card2">
+  <div class="logo-content">
+      <img src="logo.jpeg" class="logo" alt="Academy Logo"/>
+    <div>
+      <h1>IMAM INSTITUTE OF SCIENCE AND COMMERCE</h1>
+      <p>Your Path to Excellence</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="admission.html">Admission</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- 🔁 Scrolling Announcement -->
+<div class="announcement-bar">
+  <marquee behavior="scroll" direction="left">
+    📣 Admissions are Open for 2025 - Enroll Now! | Call: +92-3222774015 | Classes 9th-12th
+  </marquee>
+</div>
+
+<!-- ✨ Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Empowering Students, Building Futures</h2>
+    <p>We are dedicated to shaping the academic journey of students from class 9 to 12 with expert guidance and a nurturing environment.</p>
+    <a href="admission.html" class="cta-btn">Join Now</a>
+  </div>
+</section>
+
+<!-- 🖼️ Student Hangout Images -->
+<section class="student-images">
+  <h3>Student Hangouts</h3>
+  <div class="image-gallery">
+    <img src="2.jpg" alt="Student Hangout 1"/>
+    <img src="3.jpg" alt="Student Hangout 2"/>
+    <img src="4.jpg" alt="Student Hangout 3"/>
+  </div>
+</section>
+
+<!-- 🗺️ Location Section -->
+<section class="location glass-card">
+  <h3>📍 Our Location</h3>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3618.1024588414307!2d67.08735277537309!3d24.92857927788481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDU1JzQyLjkiTiA2N8KwMDUnMjMuNyJF!5e0!3m2!1sen!2s!4v1744918519337!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</section>
+
+<!-- 🔗 Footer with Social Media Icons -->
+<footer class="footer">
+  <div class="social-icons">
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/923222774015" target="_blank" class="whatsapp-icon">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Instagram Icon -->
+    <a href="https://instagram.com/your_instagram_handle" target="_blank" class="instagram-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <!-- Facebook Icon -->
+    <a href="https://facebook.com/your_facebook_page" target="_blank" class="facebook-icon">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+  <p>&copy; 2025 IMAM INSTITUTE OF SCIENCE AND COMMERCE. All rights reserved.</p>
+</footer>
+
+<!-- WhatsApp Floating Button (For Homepage) -->
+<a href="https://wa.me/923222774015" target="_blank" class="whatsapp-float">
+  <img src="WhatsApp.svg.webp" alt="WhatsApp" />
+</a>
+
+<script>
+  const popup = document.getElementById('popup');
+  const popupImage = document.getElementById('popup-image');
+  const popupOk = document.getElementById('popup-ok');
+
+  window.onload = () => {
+    popup.style.display = 'flex';
+  };
+
+  popupOk.onclick = () => {
+    popup.style.display = 'none';
+  };
+
+  popupImage.ondblclick = () => {
+    popupImage.classList.toggle('full-screen');
+  };
+
+</script>
+
+</body>
+</html>
